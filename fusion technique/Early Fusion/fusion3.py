@@ -7,11 +7,11 @@ from sklearn.metrics import recall_score, confusion_matrix
 from itertools import combinations, product
 
 # Task
-task_name  = 'ComParE2020_Mask'  # os.getcwd().split('/')[-2]
+task_name  = 'ComParE2020_Elderly'  # os.getcwd().split('/')[-2]
 classes    = ['clear', 'mask']
 
 # Enter your team name HERE
-team_name = 'baseline'
+team_name = 'NYIT'
 
 # Enter your submission number HERE
 submission_index = 1
