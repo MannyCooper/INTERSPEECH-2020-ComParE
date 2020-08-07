@@ -1,0 +1,20 @@
+load('130-64.mat')
+m = dlmread('/Users/jcy/Downloads/LLD/mask/ComParE2020_USOMS-e.ComParE-LLD.devel.csv',';',1,2)
+p = transpose(m)
+
+gm = p(:,1:1:96)
+encoding = vl_fisher(gm, means, covariances, priors);
+en = encoding;
+
+for h = 2 : 14647
+	hl = (h-1)*96+1 
+	hr = h*96
+      	gm = p(:,hl:1:hr)
+	encoding = vl_fisher(gm, means, covariances, priors);
+	ent = encoding
+	cat(2, en, ent);
+	en = ans;
+    end
+
+res = transpose(en);
+writematrix(res, 'devel.csv') ;
