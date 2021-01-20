@@ -3,7 +3,7 @@ This is a repository for some of our source code and information on INTERSPEECH 
 
 **Update**
 
-This paper has been accepted by INTERSPEECH 2020, you can get the full article at here 👇:
+This paper has been accepted by INTERSPEECH 2020, you can get the full paper here 👇:
 
 https://isca-speech.org/archive/Interspeech_2020/pdfs/2999.pdf
 
